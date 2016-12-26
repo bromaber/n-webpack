@@ -1,1 +1,1 @@
-这个小项目是今天学习webpack的时候搭建的，牵涉到入口文件entry.js，出口文件bundle.js，以及css-loader、style-loader，另外还有用webpack-dev-server搭建开发环境和webpack.config.js配置文件等相关知识，关键是现在存在一个问题：ndoe_modules文件夹推不到github上，哈哈，好尴尬。
+这个小项目是今天学习webpack的时候搭建的，牵涉到入口文件entry.js，出口文件bundle.js，以及css-loader、style-loader，另外还有用webpack-dev-server搭建开发环境和webpack.config.js配置文件等相关知识，对了，还有一个简单的webpack插件BannerPlugin。关键是现在存在一个问题：ndoe_modules文件夹推不到github上，哈哈，好尴尬。
