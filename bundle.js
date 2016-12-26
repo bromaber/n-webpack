@@ -47,7 +47,7 @@
 
 	__webpack_require__(1) //载入 style.css
 	console.log("Hello webpack!")
-	document.write(__webpack_require__(5)) //添加模块
+	document.write(__webpack_require__(6)) //添加模块
 	setTimeout(function(){
 		alert("成功用webpack搭建一个小项目和开发环境")
 	},1000)
@@ -62,7 +62,7 @@
 	var content = __webpack_require__(2);
 	if(typeof content === 'string') content = [[module.id, content, '']];
 	// add the styles to the DOM
-	var update = __webpack_require__(4)(content, {});
+	var update = __webpack_require__(5)(content, {});
 	if(content.locals) module.exports = content.locals;
 	// Hot Module Replacement
 	if(false) {
@@ -87,7 +87,7 @@
 
 
 	// module
-	exports.push([module.id, "body{color: #dd2017;background-color: #ccc;padding-left: 20px;}\r\n", ""]);
+	exports.push([module.id, "body{color: #dd2017;background-color: #ccc;padding-left: 20px;}\r\n.qwe,.asd{background-image: url(" + __webpack_require__(4) + ");height: 80px;width: 80px}", ""]);
 
 	// exports
 
@@ -150,6 +150,12 @@
 
 /***/ },
 /* 4 */
+/***/ function(module, exports, __webpack_require__) {
+
+	module.exports = __webpack_require__.p + "a76898e05d2276ae28d7e99b88d9cebe.png";
+
+/***/ },
+/* 5 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/*
@@ -401,7 +407,7 @@
 
 
 /***/ },
-/* 5 */
+/* 6 */
 /***/ function(module, exports) {
 
 	module.exports = "Hello world!";
